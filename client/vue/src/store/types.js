@@ -1,0 +1,16 @@
+// Getters
+export const GET_BOOKS = 'GET_BOOKS';
+export const GET_ERROR_MESSAGE = 'GET_ERROR_MESSAGE';
+export const GET_SUCCESS_MESSAGE = 'GET_SUCCESS_MESSAGE';
+
+// Mutations
+export const MUTATE_ADD_BOOK = 'MUTATE_ADD_BOOK';
+export const MUTATE_GET_BOOKS = 'MUTATE_GET_BOOKS';
+export const MUTATE_SAVE_BOOKS = 'MUTATE_SAVE_BOOKS';
+export const MUTATE_REMOVE_BOOK = 'MUTATE_REMOVE_BOOK';
+
+// Actions
+export const ACTION_ADD_BOOK = 'ACTION_ADD_BOOK';
+export const ACTION_GET_BOOKS = 'ACTION_GET_BOOKS';
+export const ACTION_SAVE_BOOKS = 'ACTION_SAVE_BOOKS';
+export const ACTION_REMOVE_BOOK = 'ACTION_REMOVE_BOOK';

@@ -1,0 +1,1 @@
+cd web && npm install && cd.. && cd client\react && npm install && npm run build && cd.. && cd.. && xcopy /y /s client\react\build\*.* web\build\react\
