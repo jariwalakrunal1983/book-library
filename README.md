@@ -1,5 +1,5 @@
 # Book library
-Sample app to demonstrate React Js and Vue Js work
+Sample app to demonstrate Angular, React and Vue Js work
 
 ## Minimum Software Requirements  
 
