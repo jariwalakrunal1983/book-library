@@ -1,0 +1,30 @@
+<div class="AddBook">
+    <div class="BookFrom">
+        <h2>Add New Book</h2>
+        <input 
+            #nameInput
+            type="text" 
+            placeholder="Name" 
+            (ngModelChange)="onChange()"
+            [(ngModel)]="name"/>
+        <textarea 
+            type="text" 
+            rows="3"
+            placeholder="Description"
+            (ngModelChange)="onChange()"
+            [(ngModel)]="description"></textarea>
+        <input 
+            min="0"
+            type="number" 
+            placeholder="Count" 
+            (ngModelChange)="onChange()"
+            [(ngModel)]="count"/>
+        <input 
+            type="text" 
+            placeholder="Author" 
+            (ngModelChange)="onChange()"
+            [(ngModel)]="author"/>
+    </div>
+    <button class="Btn BtnPrimary" [disabled]="isDisabled" (click)="onAddBook()">Add Book</button>
+    <button class="Btn BtnSuccess" (click)="onSaveBook()">Save Data</button>
+</div>

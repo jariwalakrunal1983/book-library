@@ -1,0 +1,33 @@
+<div *ngIf="isEditMode; else elseBlock">
+    <input 
+        type="text" 
+        placeholder="Name" 
+        [(ngModel)]="book.name"/>
+    <textarea 
+        type="text" 
+        rows="3"
+        placeholder="Description"
+        [(ngModel)]="book.description"></textarea>
+    <input 
+        min="0"
+        type="number" 
+        placeholder="Count" 
+        [(ngModel)]="book.count" />
+    <input 
+        type="text" 
+        placeholder="Author" 
+        [(ngModel)]="book.author"/>
+    <button class="SaveBtn Btn BtnSuccess" (click)="onToggleEditMode()">Save</button>
+</div>
+<ng-template #elseBlock>
+    <div>
+        <h2 class="Title">{{book.name}}</h2>
+        <small class="OtherInfo">Author: {{book.author}}, Qty: {{book.count}}</small>
+        <p [class]="showMore ? 'Description' : 'Description Short'">{{book.description}}</p>
+        <button class="ShowMoreBtn Btn BtnDefault" (click)="onToggleShowDetail()">
+            {{showMore ? 'Hide Detail' : 'Show Detail'}}
+        </button>
+        <button class="Btn BtnInfo" (click)="onToggleEditMode()">Edit</button>
+        <button class="Btn BtnDanger" (click)="onRemoveBook()">Remove</button>
+    </div>
+</ng-template>

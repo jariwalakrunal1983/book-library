@@ -1,0 +1,298 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+body{
+  background-color: #f2f2f2;
+}
+
+h2 {
+  margin-bottom: 6px;
+}
+
+a,
+a:link,
+a:visited {
+  color: #46b8da;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  color: #047da1;
+}
+
+input,
+textarea {
+  display: block;
+  background: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0;
+  padding: 10px 6px;
+  border: none;
+  border-bottom: 1px solid #dadada;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  resize: none;
+  transition: all 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  border-bottom: 1px solid #999;
+}
+
+button {
+  display: inline-block;
+  margin: 0 6px 0 0;
+  padding: 4px 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background: #dadada;
+  border: 1px solid #999;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #ebebeb;
+}
+
+input:disabled,
+button:disabled{
+  cursor: not-allowed;
+}
+
+::placeholder {  
+  color: #d4d4d4;
+}
+
+.App{
+  padding: 30px 0; 
+}
+
+.DevelopedBy{
+  max-width: 1200px;
+  text-align: right;
+  margin: auto;
+  padding: 0 0 12px 0;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+#root, .Books {
+  height: 100%;
+}
+
+.Books {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Left {
+  width: 25%;
+  background-color: #f9f9f9; 
+}
+
+.AddBook{
+  padding: 15px;
+}
+
+.BookFrom{
+  padding-bottom: 10px;
+}
+
+.AddBook h2{
+  font-weight: 500;
+  margin: 0;
+}
+
+.Btn {
+  border-radius: 3px;
+  color: white;
+  border: 1px solid;
+}
+
+.BtnPrimary,
+.BtnPrimary:disabled,
+.BtnPrimary:enabled {
+  background: #337ab7;
+  border-color:#2e6da4;
+}
+
+.BtnDefault {
+  color: #000;
+  background: #e2e2e2;
+  border-color:#c5c5c5;
+}
+
+.BtnPrimary:hover,
+.BtnPrimary:disabled:hover,
+.BtnPrimary:enabled:hover {
+  background: #286090;
+  border-color:#204d74;
+}
+
+.BtnDefault:hover{
+  background: #c5c5c5;
+  border-color:#818181;
+}
+
+.BtnSuccess{
+  background: #5cb85c;
+  border-color:#4cae4c;
+}
+
+.BtnSuccess:hover{
+  background: #398439;
+  border-color:#255625;
+}
+
+.BtnInfo{
+  background: #5bc0de;
+  border-color:#46b8da;
+}
+
+.BtnInfo:hover{
+  background: #31b0d5;
+  border-color:#269abc;
+}
+
+.BtnDanger{
+  background: #d9534f;
+  border-color:#d43f3a;
+}
+
+.BtnDanger:hover{
+  background: #c9302c;
+  border-color:#ac2925;
+}
+
+.Right {
+  width: 75%;
+  background-color: white;
+  border-left: 2px solid #ededed;
+}
+
+.Title{
+  font-weight: 500;
+}
+
+input[type=text].SearchBar{
+  background: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+input[type=text].SearchBar:hover,
+input[type=text].SearchBar:focus{
+  border-bottom: 1px solid #dadada;
+}
+
+.Book {
+  padding: 0 20px; 
+  margin-bottom: 15px;
+  
+}
+.Book > div,
+.Book > app-book{
+  border-bottom: 1px solid #dadada;
+  padding-bottom: 25px; 
+  display: block;
+}
+
+.Book:last-child > div,
+.Book:last-child > app-book{
+  border-bottom: none;
+  padding-bottom: 10px;
+}
+
+.OtherInfo,
+.Description{
+  color: #808080;
+}
+
+.Description{
+  transition: all 0.3s;
+}
+
+.Description.Short{
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.Error,
+.Message {
+  border: 1px solid transparent;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border-radius: 3px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+}
+
+.Message {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.Error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.SwitchTo {
+  padding: 20px 0;
+}
+
+.SwitchTo svg {
+  margin-right: 6px;
+}
+
+.SwitchTo a {
+  color: #555;
+  text-decoration: none;
+  display: block;
+}
+
+.SwitchTo a:hover {
+  color: #000;
+}
+
+.SwitchTo a,
+.SwitchTo svg{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 768px){
+  .Books {
+    display: block;
+    padding: 20px;
+  }
+  
+  .Left,
+  .Right {
+    width: auto;
+    margin: 0 0 40px 0;;
+  }
+  
+}

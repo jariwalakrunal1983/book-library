@@ -1,0 +1,12 @@
+<div class="Books">
+    <div class="Left">
+        <app-add-book (saveDataMessage)="showMessage($event)"></app-add-book>
+    </div>
+    <div class="Right">
+        <span class="Message" *ngIf="appMessage !== ''">{{appMessage}}</span>
+        <input type="text" placeholder="Search" class="SearchBar" [(ngModel)]="searchValue"/>
+        <div *ngFor="let book of books; let i = index" [class]="filterByValue(book) ? 'Book': 'Book EmptyBook'">
+            <app-book *ngIf="filterByValue(book)" [book]="book" [index]="i"></app-book>
+        </div>
+    </div>
+</div>
