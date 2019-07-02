@@ -1,6 +1,11 @@
 <template>
     <div class="App">
-        <p class="DevelopedBy">This demo created by <a target="_blank" href="https://github.com/jariwalakrunal1983">Krunal Jariwala</a></p>
+        <p class="DevelopedBy">
+            You are running Vue front end app. 
+            Switch to <a href="/react">React App</a> or
+            <a href="/angular">Angular App</a>.  
+            This demo created by <a target="_blank" href="https://github.com/jariwalakrunal1983">Krunal Jariwala</a>
+        </p>
         <div class="Books">
             <div class="Left">
                 <add-book/>

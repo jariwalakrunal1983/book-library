@@ -48,7 +48,7 @@ class Book extends Component {
                                 placeholder="Author" 
                                 onChange={this.props.authorChange}
                                 value={this.props.author} />
-                            <button className="SaveBtn" onClick={() => this.toggleEditModeHandler()}>Save</button>
+                            <button className="SaveBtn Btn BtnSuccess" onClick={() => this.toggleEditModeHandler()}>Save</button>
                         </div> :
                         <div>
                             <h2 className="Title">{this.props.name}</h2>

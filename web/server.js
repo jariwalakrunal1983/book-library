@@ -24,6 +24,16 @@ app.get('/vue', function (req, res) {
     res.sendFile(__dirname + '/build/vue/index.html');
 });
 
+app.get('/angular', function (req, res) {
+    app.use('/runtime.js', express.static(__dirname + '/build/angular/runtime.js'));
+    app.use('/polyfills.js', express.static(__dirname + '/build/angular/polyfills.js'));
+    app.use('/styles.css', express.static(__dirname + '/build/angular/styles.css'));
+    app.use('/es2015-polyfills.js', express.static(__dirname + '/build/angular/es2015-polyfills.js'));
+    app.use('/main.js', express.static(__dirname + '/build/angular/main.js'));
+    app.use('/favicon.ico', express.static(__dirname + '/build/angular/favicon.ico'));
+    res.sendFile(__dirname + '/build/angular/index.html');
+});
+
 app.get('/api/data', function (req, res, next) {
     process.nextTick(function() {
         fs.readFile(__dirname + '/data/books.json', 'utf8', function (err,data) {
