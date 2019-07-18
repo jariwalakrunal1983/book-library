@@ -8,7 +8,7 @@ import * as actionTypes from '../store/actions';
 import fetchBooksData from '../store/fetchBooksData';
 import saveBooksData from '../store/saveBooksData';
 
-class Books extends Component {
+export class Books extends Component {
     state = {
         searchValue: '',
         hasSearchValue: false,
